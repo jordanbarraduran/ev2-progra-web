@@ -29,4 +29,9 @@ $(".nav-link").on( "click", function( event ) {
         e.preventDefault();
         cargarContenido('arbustos.html');
     });
+
+    $("#link-carrito").click(function(e){
+        e.preventDefault();
+        cargarContenido('carrito.html');
+    });
 });
