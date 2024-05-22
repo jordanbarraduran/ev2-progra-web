@@ -1,0 +1,68 @@
+/*
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.xtrafondos.com/descargar.php?id=613&resolucion=1600x1200');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
+
+.container-formulario {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.container-formulario h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.container-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-formulario form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.container-formulario form input, .container-formulario form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%; /* Ensure inputs take the full width of the form */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.container-formulario form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container-formulario form button:hover {
+    background-color: #1f6391;
+}
