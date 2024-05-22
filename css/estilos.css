@@ -1,3 +1,22 @@
 .navbar-brand {
   font-weight: bold;  
 }
+
+#carouselExampleIndicators {
+  height: 500px;
+}
+
+#carouselImages {
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.footer-test {
+  height: 100px;
+  background-color: #45494e;
+}
