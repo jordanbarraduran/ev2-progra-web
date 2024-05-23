@@ -1,47 +1,38 @@
-// Previene el comportamiento por defecto de los enlaces
-$(".nav-link").on( "click", function( event ) {
-    event.preventDefault();
-    console.log("Prevenido");
-
+$(document).ready(function() {
     // Función para cargar contenido
     function cargarContenido(archivo) {
         $("#contenido").load(archivo);
         console.log("Cargando " + archivo);
     }
 
-    // Carga el contenido de la página correspondiente en el div con id="contenido"
-    $("#link-maceteros").click(function(e){
-        e.preventDefault();
-        cargarContenido('maceteros.html');
-    });
-
-    $("#link-sustratos").click(function(e){
-        e.preventDefault();
-        cargarContenido('sustratos.html');
-    });
-
-    $("#link-flores").click(function(e){
-        e.preventDefault();
-        cargarContenido('flores.html');
-    });
-
-    $("#link-arbustos").click(function(e){
-        e.preventDefault();
-        cargarContenido('arbustos.html');
-    });
-
-    $("#link-carrito").click(function(e){
-        e.preventDefault();
-        cargarContenido('carrito.html');
-    });
-
-    $("#link-iniciar-sesion").click(function(e){
-        e.preventDefault();
-        cargarContenido('iniciosesion.html');
-    });
-
-    $("#link-registrarse").click(function(e){
-        e.preventDefault();
-        cargarContenido('registro.html');
+    // Previene el comportamiento por defecto de los enlaces
+    $(".nav-link").off("click").on("click", function(event) {
+        event.preventDefault();
+        const id = $(this).attr('id');
+        switch (id) {
+            case "link-maceteros":
+                cargarContenido('maceteros.html');
+                break;
+            case "link-sustratos":
+                cargarContenido('sustratos.html');
+                break;
+            case "link-flores":
+                cargarContenido('flores.html');
+                break;
+            case "link-arbustos":
+                cargarContenido('arbustos.html');
+                break;
+            case "link-carrito":
+                cargarContenido('carrito.html');
+                break;
+                /*
+            case "link-iniciar-sesion":
+                cargarContenido('iniciosesion.html');
+                break;
+            case "link-registrarse":
+                cargarContenido('registro.html');
+                break;
+                */
+        }
     });
 });

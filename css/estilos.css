@@ -28,3 +28,18 @@
 
 }
 
+.text-formulario {
+  color: #ffffff;
+  /*
+  quitar subrayado
+  */
+  text-decoration: none;
+}
+
+.footer-test {
+  margin-top: 50px;
+}
+
+.card-text-price {
+  font-weight: bold;
+}
